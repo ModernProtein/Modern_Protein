@@ -1,0 +1,135 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li a {
+    text-decoration: none !important;
+    color: inherit !important; 
+    font-size: 18px !important;}
+
+
+/* Estilos del encabezado */
+header {
+    background-color: #333 !important;
+    color: #fff !important;
+    padding: 20px !important;
+    text-align: center !important;
+}
+
+
+h1 {
+    margin-block-start: 0.67em !important;
+    margin-block-end: 0.67em !important;
+    margin-inline-start: 0px !important;
+    margin-inline-end: 0px !important;
+    font-weight: bold !important;
+    unicode-bidi: isolate !important;
+    font-size: 40px !important;
+    color: #f44236 !important;
+    }
+
+header nav ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+header nav ul li {
+    display: inline !important;
+    margin-right: 20px !important;
+}
+
+/* Estilos del héroe */
+.hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #f44236;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #CC241D;
+    color: #fff !important;
+}
+
+/* Estilos de características */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.feature {
+    text-align: center;
+    max-width: 300px;
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.feature p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/*Caroussel*/
+.carousel {
+    position: relative;
+    margin-top: 5%;
+  }
+
+  .container h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #2c3e50; /* Cambia el color del texto */
+    margin-bottom: 30px; /* Aumenta el espacio inferior */
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif; /* Cambia la fuente */
+    border-bottom: 2px solid #f44236; /* Agrega un borde inferior */
+    padding-bottom: 10px; /* Agrega espacio entre el texto y el borde inferior */
+    margin-top: 5%;
+  }
+  
+
+
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative; /* Posicionamiento relativo */
+    margin-top: auto; /* Margen superior automático */
+}

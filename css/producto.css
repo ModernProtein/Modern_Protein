@@ -1,0 +1,291 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    padding-bottom: 0px;
+    font-family: Arial, sans-serif !important;
+    font-size: 16px !important;
+}
+
+header > h1{
+    color: #f44236;
+    font-size: 40px;
+    border: #fff;
+}
+
+header a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px !important;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Estilos del héroe */
+.hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #f44236;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-family: Arial, sans-serif;
+}
+
+.btn:hover {
+    background-color: #CC241D;
+}
+
+.secondary-nav {
+    background-color: #333;
+    text-align: center;
+    border-top: 5px solid #fff; /* Borde superior blanco */
+    margin-top: 20px; /* Margen superior para separación */
+}
+
+.secondary-nav ul {
+    list-style-type: none;
+    padding: 1%;
+}
+
+.secondary-nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.secondary-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.secondary-nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Estilos del apartado de productos */
+.products {
+    text-align: center;
+    padding: 20px;
+}
+
+.product-category {
+    margin-bottom: 50px;
+}
+
+.product-category h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el título de la sección */
+.products h2 {
+    text-align: center;
+    font-size: 45px;
+    color: #2c3e50; /* Cambia el color del texto */
+    margin-bottom: 30px; /* Aumenta el espacio inferior */
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif; /* Cambia la fuente */
+    font-weight: 500;
+    display: inline-block; /* Hace que el h2 sea un elemento en línea */
+    border-bottom: 2px solid #f44236; /* Agrega un borde inferior */
+    padding-bottom: 10px; /* Agrega espacio entre el texto y el borde inferior */
+    margin-bottom: 5%;
+}
+
+/* Estilos para cada producto */
+.product {
+    background-color: #f9f9f9; /* Color de fondo */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    margin-bottom: 20px; /* Espacio entre productos */
+    display: flex; /* Utilizar flexbox */
+    align-items: center; /* Centrar verticalmente los elementos */
+    justify-content: space-evenly;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* Estilos para la imagen del producto */
+.product img {
+    max-width: 200px; /* Tamaño máximo de la imagen */
+    border-radius: 10px;
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1%;
+    font-family: Arial, sans-serif;
+}
+
+.product-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 1.5%;
+}
+
+.flavor-label {
+    /*background-color: #a2d5ab; */
+    background-color: #b0c4de;  
+    color: #333;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-description {
+    flex: 1;
+    text-align: left;
+    padding-left: 5%;
+    font-size: 16px;
+    color: #666;
+}
+
+.product-description > p{
+    font-size: 15px;
+}
+
+.product-meta {
+    flex: 1;
+    text-align: left;
+    padding-left: 10%;
+}
+
+.product-info p {
+    margin-bottom: 10px;
+}
+
+.price strong{
+    font-size: 30px !important;
+    color: black;
+    margin-bottom: 2%;
+}
+
+.price-details{
+    font-size: 14px;
+    color: #666666;
+
+}
+
+.bought{
+    font-size: 14px;
+    color: #666666;
+}
+
+.size {
+    background-color: #666;
+    font-size: 14px;
+    border-radius: 40%;
+    padding: 0% 4%;
+    margin-top: 1%;
+}
+
+.product-btn{
+    align-self: end;
+}
+
+.rating p{
+    padding-left: 2%;
+    font-size: 14px;
+}
+.rating {
+    display: flex;
+    justify-content: left;
+    pointer-events: none;
+    direction: rtl;
+    font-size: 16px; /* Tamaño base */
+}
+
+.star {
+    font-size: 12px; /* Tamaño de las estrellas */
+}
+.rating input {
+    display: none;
+}
+
+.rating label {
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+}
+
+.rating input:checked ~ label {
+    color: #ffc107; /* Color de estrella seleccionada */
+}
+
+
+.product-details .btn:hover {
+    background-color: #CC241D; /* Color de acento oscuro */
+}
+
+/* Estilos para el título, texto y botón */
+.product-details h4, .product-details p, .product-details .price, .product-details {
+    width: 100%; /* Ocupar todo el ancho disponible */
+}
+
+.product-details h4{
+    color: #2c3e50;
+    font-family: 'Arial', sans-serif !important;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative; /* Posicionamiento relativo */
+    margin-top: auto; /* Margen superior automático */
+}
