@@ -10,32 +10,36 @@ header {
     color: #fff;
     padding: 20px;
     text-align: center;
-    padding-bottom: 0px;
-    font-family: Arial, sans-serif !important;
-    font-size: 16px !important;
-}
-header > h1{
-    color: #f44236;
-    font-size: 40px;
-    border: #fff;
+    font-family: Arial, sans-serif;
 }
 
-header a{
+header > h1 {
+    color: #f44236;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+header a {
     text-decoration: none;
     color: inherit;
-    font-size: 18px !important;
+    font-size: 18px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
 }
 
 header nav ul {
+    list-style: none;
     margin: 0;
-    padding: 0;
-    list-style-type: none;
-    padding: 0;
+    display: flex;
 }
 
 header nav ul li {
-    display: inline;
     margin-right: 20px;
+    margin-left: 20px;
 }
 
 /* Estilos del héroe */
@@ -72,35 +76,6 @@ header nav ul li {
     background-color: #CC241D;
 }
 
-.secondary-nav {
-    background-color: #333;
-    text-align: center;
-    border-top: 5px solid #fff; /* Borde superior blanco */
-    margin-top: 20px; /* Margen superior para separación */
-}
-
-.secondary-nav ul {
-    list-style-type: none;
-    padding: 1%;
-}
-
-.secondary-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.secondary-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 10px 20px;
-}
-
-.secondary-nav ul li a:hover {
-    background-color: #555;
-}
-
-
 
 .secondary-nav {
     background-color: #333;
@@ -111,7 +86,7 @@ header nav ul li {
 
 .secondary-nav ul {
     list-style-type: none;
-    padding: 1%;
+    margin-bottom: -7px;
 }
 
 .secondary-nav ul li {
