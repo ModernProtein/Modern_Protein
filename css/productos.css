@@ -90,6 +90,7 @@ header nav ul li {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
+    font-family: 'Arial', sans-serif !important;
 }
 
 .nuestrosProductos{
