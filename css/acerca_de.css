@@ -103,17 +103,18 @@ header nav ul li {
 
 .bodyUS {
     position: relative;
-    padding: 40px 0; /* Ajusta el padding según sea necesario */
+    text-align: center;
+    color: white;
 }
 
 .background-img {
-    position: relative;
     width: 100%;
-    height: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: -1;
-    background-size: cover;
-    background-position: center;
-    opacity: 1;
+    transition: transform 0.5s ease;
 }
 
 .overlay {
@@ -122,73 +123,54 @@ header nav ul li {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semi-transparente */
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
 
+/* Contenedor principal */
 .contenedor {
-    position: relative;
-    z-index: 1;
-    background-color: white;
-    border: 2px solid red; /* Borde rojo de 1 píxel */
-    border-radius: 10px; /* Bordes redondeados de 10px */
-    margin-top: -550px;
-    margin-left: 5%;
-    margin-right: 5%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra de color negro con 10px de desenfoque */
+    padding: 20px;
+    margin-top: 20px;
+
 }
 
 .contenido {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border-radius: 10px;
+    border: #CC241D 2px solid;
+    margin-top: 120px;
 }
 
+/* Estilos de las filas */
 .fila {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%; /* Ajusta el ancho según sea necesario */
-    margin-bottom: 20px; /* Espacio entre filas */
-    margin-top: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
-.info{
-    flex-grow: 1; /* Hace que el párrafo ocupe todo el espacio disponible */
-}
-.info,
-.foto {
-    width: 35%; /* Ajusta el ancho según sea necesario */
-    
+.fila h2{
+    border-bottom: 2px solid #f44236; /* Agrega un borde inferior */
+    padding-bottom: 2%;
 }
 
-.info h2{
-    color: black;
-    border-bottom: 2px solid #f44236;
-    padding-bottom: 10px;
-}
-.info p{
-    color: #333;
-    
+.foto, .info {
+    flex: 1;
+    padding: 10px;
 }
 
-.imagen {
-    width: 90%;
-    height: auto;
-    margin-left: 15%;
+.foto img {
+    width: 60%;
+    border-radius: 10px;
 }
 
 .imagen2{
-    width: 55%;
-    object-fit: cover;
-    height: auto;
+    width: 40% !important;
 }
 
-h2,
-p {
-    color: #fff; /* Color del texto */
-    text-align: center;
-}
 
 /* Estilos del pie de página */
 footer {
@@ -229,13 +211,56 @@ footer {
     .secondary-nav ul li a {
         color: #fff;
         text-decoration: none;
-        font-size: 16px;
+        font-size: 14px;
         padding: 0px 0px;
+    }
+
+    header a{
+        font-size: 14px !important;
     }
 
 
     header nav ul li {
         margin: 10px 0;
         flex: 1;
+        font-size: 11px !important;
+    }
+
+    .aProductos{
+        margin-left: -4px;
+        margin-right: 4px;
+    }
+
+    .nuestrosProductos  h2{
+        font-size: 30px;
+    }
+
+    .fila {
+        flex-direction: column;
+    }
+
+    .fila2 {
+        flex-direction: column-reverse; /* Imagen a la izquierda, texto a la derecha */
+    }
+    
+    .foto, .info {
+        padding: 5px;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+
+    .background-img {
+        width: auto;
+        height: 100vw; /* Ajuste la altura a la anchura de la ventana */
+        transform: rotate(90deg);
+        top: 30%; /* Centra verticalmente la imagen */
+        left: 50%; /* Centra horizontalmente la imagen */
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+
+    .contenido{
+        margin-top: 100px;
     }
 }

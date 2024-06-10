@@ -1,56 +1,53 @@
-/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li a {
-    text-decoration: none !important;
-    color: inherit !important; 
-    font-size: 18px !important;}
-
-
 /* Estilos del encabezado */
 header {
-    background-color: #333 !important;
-    color: #fff !important;
-    padding: 20px !important;
-    text-align: center !important;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding-top: 2%;
+}
+
+header > h1 {
+    color: #f44236;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 header a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: inherit;
     font-size: 18px;
 }
 
-
-h1 {
-    margin-block-start: 0.67em !important;
-    margin-block-end: 0.67em !important;
-    margin-inline-start: 0px !important;
-    margin-inline-end: 0px !important;
-    font-weight: bold !important;
-    unicode-bidi: isolate !important;
-    font-size: 40px !important;
-    color: #f44236 !important;
+header a:hover,
+header a:focus{
+    text-decoration: none !important;
+    color: inherit;
 }
 
 
+header nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.9% !important;
+}
+
 header nav ul {
-    margin: 0 !important;
-    padding: 0 !important;
+    list-style: none;
+    margin: 0;
+    display: flex;
 }
 
 header nav ul li {
-    display: inline !important;
-    margin-right: 20px !important;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 /* Estilos del héroe */
@@ -139,4 +136,68 @@ footer {
     padding: 20px 0;
     position: relative; /* Posicionamiento relativo */
     margin-top: auto; /* Margen superior automático */
+}
+
+
+/* Media Queries para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 10px;
+    }
+
+    header a{
+        font-size: 14px;
+    }
+
+    header > h1 {
+        font-size: 30px;
+    }
+
+    header nav {
+        flex-direction: column;
+    }
+
+    header .primary-nav{
+        padding-right: 10%
+    }
+    header nav ul li {
+        margin: 10px 0;
+        flex: 1;
+    }
+
+    .aProductos{
+        margin-left: -4px;
+        margin-right: 4px;
+    }
+
+    .container h2{
+        font-size: 28px;
+        margin-top: 10%;
+    }
+
+    .carousel-caption a{
+        font-size: 11px;
+    }
+
+    .features {
+        padding: 20px 0; /* Ajusta el espacio superior e inferior */
+        display: block;
+        width: 100%; /* Ancho al 100% para ocupar todo el ancho de la pantalla */
+        margin-left: 10%;
+
+    }
+
+    .feature {
+        margin-bottom: 20px; /* Reducir el espacio entre las características */
+    }
+
+    .feature h3 {
+        font-size: 18px; /* Reduce el tamaño de la fuente del título para dispositivos móviles */
+        margin-bottom: 8px; /* Reduce el espacio inferior del título */
+    }
+
+    .feature p {
+        font-size: 12px; /* Reduce el tamaño de la fuente del párrafo para dispositivos móviles */
+    }
 }
