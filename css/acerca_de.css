@@ -108,6 +108,7 @@ header nav ul li {
     position: relative;
     text-align: center;
     color: white;
+    font-size: 20px;
 }
 
 .background-img {
@@ -144,7 +145,7 @@ header nav ul li {
     background: rgba(255, 255, 255, 0.9);
     color: #333;
     border-radius: 10px;
-    border: #f44236 2px solid;
+    border: #f44236 3px solid;
     margin-top: 120px;
 }
 
@@ -166,7 +167,7 @@ header nav ul li {
 }
 
 .foto img {
-    width: 60%;
+    width: 80%;
     border-radius: 10px;
 }
 
