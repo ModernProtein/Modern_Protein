@@ -61,11 +61,13 @@ header nav ul li {
     text-align: center;
     border-top: 5px solid #fff; /* Borde superior blanco */
     margin-top: 20px; /* Margen superior para separación */
+    
 }
 
 .secondary-nav ul {
     list-style-type: none;
     margin-bottom: -7px;
+    margin-left: -4%;
 }
 
 .secondary-nav ul li {
@@ -141,7 +143,7 @@ header nav ul li {
     background: rgba(255, 255, 255, 0.9);
     color: #333;
     border-radius: 10px;
-    border: #CC241D 2px solid;
+    border: #f44236 2px solid;
     margin-top: 120px;
 }
 
@@ -179,7 +181,7 @@ footer {
     text-align: center;
     padding: 20px 0;
     position: relative; /* Posicionamiento relativo */
-    margin-top: 10%;
+    margin-top: 40%;
 }
 
   
@@ -215,6 +217,10 @@ footer {
         padding: 0px 0px;
     }
 
+    .secondary-nav ul{
+        margin-left: 0;
+    }
+
     header a{
         font-size: 14px !important;
     }
@@ -229,6 +235,11 @@ footer {
     .aProductos{
         margin-left: -4px;
         margin-right: 4px;
+    }
+
+    .contenedor{
+        padding: 20px;
+        margin-top: 170px;
     }
 
     .nuestrosProductos  h2{
@@ -261,6 +272,6 @@ footer {
     }
 
     .contenido{
-        margin-top: 100px;
+        margin-top: 10px;
     }
 }

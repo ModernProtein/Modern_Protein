@@ -51,6 +51,7 @@ header nav ul li {
 .secondary-nav ul {
     list-style-type: none;
     margin-bottom: -7px;
+    margin-left: -4%;
 }
 
 .secondary-nav ul li {
@@ -313,6 +314,10 @@ footer {
         font-size: 16px;
         padding: 0px 0px;
         font-size: 14px;
+    }
+
+    .secondary-nav ul{
+        margin-left: 0;
     }
 
 
